@@ -1,0 +1,14 @@
+body {
+  background-color: aquamarine;
+}
+
+.hero {
+  color: red;
+  width: 100%;
+  height: 150px;
+}
+
+#about-us {
+  font-size: 40px;
+  color: blue;
+}
