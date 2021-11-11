@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //global
+      const students = [
+        { name: "Christina", language: "en" },
+        { name: "Daniel", language: "fr" },
+        { name: "Emily", language: "es" },
+        { name: "Padma", language: "te" },
+        { name: "Leti", language: "it" },
+      ];
+
+      function sayHello() {
+        // function scope
+        const languages = {
+          en: "Hello",
+          fr: "Bonjour",
+          es: "Hola",
+          te: "Namaste",
+        };
+
+        // Hello Christina
+        //const greeting = `${languages.en} ${students[0].name}`;
+        // const greeting = `${languages.fr} ${students[1].name}`;
+        // const greeting = `${languages.es} ${students[2].name}`;
+        // const greeting = `${languages.te} ${students[3].name}`;
+        for (let i = 0; i < students.length; i++) {
+          // const greeting = `${languages['en']} ${students[0].name}`;
+          const studentLanguage = languages[students[i].language];
+          //   console.log("lang", studentLanguage);
+          if (studentLanguage) {
+            const greeting = `${studentLanguage} ${students[i].name}`;
+            //   console.log(students[i].name);
+            console.log(greeting);
+          }
+        }
+        // console.log(students);
+      }
+      sayHello();
+      //   console.log(hello);
+    </script>
+  </body>
+</html>
