@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops and objects</title>
+  </head>
+  <body>
+    <script>
+      const car = {
+        make: "Seat",
+        model: "Leon",
+        color: "red",
+        year: 2014,
+        owner: "Leti",
+      };
+      const keys = Object.keys(car);
+
+      //   for (let key in car) {
+      // console.log("key", key);
+      // console.log("value", car[key]);
+      //   }
+
+      // create a function that updates the color of the car
+      const updateColor = (color) => {
+        console.log("color argument", color);
+        if (typeof color === "string") {
+          car.color = color;
+        }
+      };
+
+      updateColor(324423);
+      updateColor("blue");
+
+      console.log(car);
+    </script>
+  </body>
+</html>
