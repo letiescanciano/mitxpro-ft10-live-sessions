@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3 - Session 1 Examples</title>
+</head>
+<body>
+    <script>
+        const myString = 'This is my first string in Javascript'
+
+        // check the lenght
+        // console.log('Length of myString', myString.length)
+
+        // split into words
+        // console.log(myString.split(' '))
+
+        // number of words in the string
+        const numberOfWords = myString.split(' ').length
+
+        // console.log(myString.split(' ').length)
+
+        //split my string into words and add a new word at the end
+        
+        const myNewString = myString.split(' ')
+        myNewString.push('whatever new word we want to add')
+        
+        // Template literal strings
+        const language = 'Javascript'
+        const mood = 'enjoying'
+        const string2 = `This is my first string in ${language} and I'm really ${mood} it`
+        const string3 = 'This is my first string in ' + language + "and I'm really " + mood + ' it'
+
+        console.log(string2)
+        console.log(string3)
+    </script>
+</body>
+</html>
